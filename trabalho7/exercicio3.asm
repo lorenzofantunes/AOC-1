@@ -13,8 +13,6 @@
     ori $t3, $t3, 0x1 #contante 1
 
     la $t0, tamanho
-    nop
-
     lw $t0, 0x0($t0) #carrega o tamanho
     sub $t0, $t0, 0x1
 
