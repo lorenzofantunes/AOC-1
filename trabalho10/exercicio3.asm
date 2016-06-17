@@ -30,8 +30,10 @@
 
         slt $t7, $t2, $t6 # se a letra for maior que 64 seta 1
         slt $t8, $t6, $t3 # se a letra for menor que 91 seta 1
-        and $t7, $t7, $t8 #and entre elas
-        not $t7, $t7  #invert valor
+        #xor 
+        #and $t7, $t7, $t8 #and entre elas
+        #xor $t7, $t7  #invert valor
+
 
         beq $t7 $zero, minimiza
         nop
