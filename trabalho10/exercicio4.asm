@@ -1,10 +1,10 @@
 .data
-    letra: .space 2 #1 byte
+    letra: .space 3 #1b letra 1b enter 1b fim de string
     sete: .float 7
     vinteTres: .float 23
 .text
-    li $a1, 2 #tamanho de ler
     la $a0, letra
+    li $a1, 3 #tamanho de ler
 
     loop:
         li $v0, 8
@@ -71,7 +71,6 @@
 
         j loop
     nop
-
 
     fim:
         nop
